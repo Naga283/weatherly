@@ -35,27 +35,13 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   http: ^0.13.5
-  animation_search_bar: ^0.0.10
   shared_preferences: ^2.0.17
   intl: ^0.18.0
-  gradient_borders: ^1.0.0
-  weather_animation: ^0.0.2
-  # location: ^7.0.1
   lottie: ^3.0.0
-  cupertino_listview: ^2.0.0
-  smooth_page_indicator: ^1.0.1
-  carousel_slider: ^4.2.1
-  sleek_circular_slider: ^2.0.1
-  smooth_compass: ^2.0.4
-  arrow_path: ^3.0.0
-  weather_icons: ^3.0.0
-  palette_generator: ^0.3.3+2
   flutter_dotenv: ^5.2.1
-  geolocator: ^13.0.2
   flutter_riverpod: ^2.6.1
   riverpod_annotation: ^2.6.1
   glass: ^2.0.0+2
-  shimmer: ^3.0.0
 
 dev_dependencies:
   flutter_test:

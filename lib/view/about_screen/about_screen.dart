@@ -9,15 +9,27 @@ class AboutScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.lightBlue,
         centerTitle: true,
-        title: const Text(
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.of(context).pop();
+          },
+          child: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
+        ),
+        title: Text(
           "About",
+          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+              fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20),
         ),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 16.0,
-          vertical: 16.0,
+          vertical: 26.0,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

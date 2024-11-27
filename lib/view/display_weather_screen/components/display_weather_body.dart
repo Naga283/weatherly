@@ -56,7 +56,7 @@ class DisplayWeatherBody extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10.0),
                   child: Text(
-                    '${data.tempInfo.temperature.toStringAsFixed(0)}\u00B0 | ${data.weatherInfo.description.toTitleCase()}',
+                    '${data.tempInfo.temperature.toStringAsFixed(0)}\u00B0 C| ${data.weatherInfo.description.toTitleCase()}',
                     style: const TextStyle(
                         color: Colors.white,
                         fontSize: 30,
@@ -64,7 +64,7 @@ class DisplayWeatherBody extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'H:${data.tempInfo.temperature.toStringAsFixed(0)}\u00B0  L:${data.tempInfo.temperature.toStringAsFixed(0)}\u00B0',
+                  'H:${data.tempInfo.temperature.toStringAsFixed(0)}\u00B0 C  L:${data.tempInfo.temperature.toStringAsFixed(0)}\u00B0 C',
                   style: const TextStyle(
                       color: Colors.white,
                       fontSize: 20,

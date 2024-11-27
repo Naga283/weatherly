@@ -12,14 +12,12 @@ class SearchBarWidget extends ConsumerWidget {
   const SearchBarWidget({
     super.key,
     required this.searchCityTextController,
-    // required this.searchLoading,
     required this.loadedCities,
     required this.filteredList,
     required this.result,
   });
 
   final TextEditingController searchCityTextController;
-  // final bool searchLoading;
   final List<CityReponse> loadedCities;
   final List<CityReponse> filteredList;
   final WeatherResponse? result;
@@ -56,6 +54,8 @@ class SearchBarWidget extends ConsumerWidget {
             suffixIcon: const Icon(Icons.cancel),
             onSuffixTap: () {
               searchCityTextController.text = '';
+              ref.read(isSearchFieldDisplayStateProvider.notifier).state =
+                  false;
               ref.read(filtersCityListChangeNotifierProvider).clearList();
               FocusManager.instance.primaryFocus?.unfocus();
             },

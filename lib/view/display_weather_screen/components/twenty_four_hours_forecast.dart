@@ -55,7 +55,7 @@ class TwentyFourHoursForecast extends StatelessWidget {
                           width: 33,
                         ),
                         Text(
-                          '${kelvinToCelsius(currentDayDetails[index].main.temp).toStringAsFixed(1)}\u00B0',
+                          '${kelvinToCelsius(currentDayDetails[index].main.temp).toStringAsFixed(1)}\u00B0 C',
                           style: const TextStyle(
                               overflow: TextOverflow.ellipsis,
                               color: Colors.white70,

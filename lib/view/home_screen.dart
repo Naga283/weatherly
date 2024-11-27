@@ -58,10 +58,10 @@ class _NewHomeScreenState extends ConsumerState<HomeScreen> {
                 ),
               );
             },
-            icon: Icon(Icons.info),
+            icon: const Icon(Icons.info),
             color: Colors.white,
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           )
         ],
