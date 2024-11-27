@@ -14,7 +14,6 @@ migrate_working_dir/
 *.iml
 *.ipr
 *.iws
-*.env
 .idea/
 
 # The .vscode folder contains launch configuration and tasks you configure in
@@ -30,6 +29,7 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
+.env
 /build/
 
 # Symbolication related
